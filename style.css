@@ -1,0 +1,161 @@
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  color: #151d3b;
+}
+
+.container {
+  max-width: 100rem;
+  /* background-color: aqua; */
+  height: 100vh;
+  margin: 0 auto;
+  padding: 3.6rem;
+
+  position: relative;
+}
+
+.container::after {
+  content: 'Created by Jay P. Koradiya';
+  font-size: 1.2em;
+  color: #555;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.turn {
+  height: 3.2rem;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.board {
+  width: 36rem;
+  height: 36rem;
+  margin: 0 auto;
+  background-color: #eee;
+  border-radius: 11px;
+  box-shadow: 0 0 0.6rem 0.8rem rgb(0, 0, 0, 0.025);
+  margin-bottom: 2.4rem;
+  font-weight: 400;
+
+  display: grid;
+  grid-template-columns: 1fr 1.2rem 1fr 1.2rem 1fr;
+  grid-template-rows: 1fr 1.2rem 1fr 1.2rem 1fr;
+}
+.cell {
+  font-size: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d82148;
+  /* color: #6ebf8b; */
+  transition: all 0.3;
+}
+
+.cell:hover {
+  background-color: #ddd;
+}
+
+.vl-1 {
+  grid-row: 1/-1;
+  grid-column: 2;
+}
+
+.vl-2 {
+  grid-row: 1/-1;
+  grid-column: 4;
+}
+
+.v-line {
+  background-color: #8bcca2;
+  border-radius: 100px;
+}
+
+.hl-1 {
+  grid-row: 2;
+  grid-column: 1/-1;
+}
+
+.hl-2 {
+  grid-row: 4;
+  grid-column: 1/-1;
+}
+
+.h-line {
+  background-color: #8bcca2;
+  border-radius: 100px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-name {
+  font-size: 2.4rem;
+}
+
+.score-line {
+  font-size: 4.8rem;
+  color: #6ebf8b;
+}
+
+.score {
+  width: 10rem;
+  display: inline-block;
+  padding: 0.4rem 3.6rem;
+  background-color: #eee;
+  /* color: #d82148; */
+  font-weight: 700;
+  border-radius: 11px;
+  text-align: center;
+}
+
+.p1-score {
+  color: #d82148;
+}
+.p2-score {
+  color: #333;
+}
+
+.reset {
+  height: 3.6rem;
+  width: 3.6rem;
+  color: #d82148;
+  background-color: #eee;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 3.6rem;
+  right: 25%;
+}
+.reset-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  font-weight: 700;
+}

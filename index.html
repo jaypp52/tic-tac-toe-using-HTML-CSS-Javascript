@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>tic tac toe (JP)</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="queries.css" /> -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <p class="turn">Player1's turn....</p>
+      <div class="board">
+        <div class="cell c1"></div>
+        <div class="cell c2"></div>
+        <div class="cell c3"></div>
+        <div class="cell c4"></div>
+        <div class="cell c5"></div>
+        <div class="cell c6"></div>
+        <div class="cell c7"></div>
+        <div class="cell c8"></div>
+        <div class="cell c9"></div>
+        <div class="v-line vl-1"></div>
+        <div class="v-line vl-2"></div>
+        <div class="h-line hl-1"></div>
+        <div class="h-line hl-2"></div>
+      </div>
+      <div class="bottom">
+        <div class="info">
+          <p class="player-name">Player1</p>
+          <p class="score-line">Score: <span class="score p1-score">0</span></p>
+        </div>
+
+        <div class="info">
+          <p class="player-name">Player2</p>
+          <p class="score-line">Score: <span class="score p2-score">0</span></p>
+        </div>
+      </div>
+      <div class="reset">
+        <ion-icon class="reset-icon" name="refresh-outline"></ion-icon>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
